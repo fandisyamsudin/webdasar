@@ -265,6 +265,11 @@ img{
   background-color: var(--first-color-alt);
 }
 
+aside{
+  float: left;
+  width: 45%;
+}
+
 .about__data{
   text-align: center;
   justify-self: center;
@@ -272,6 +277,7 @@ img{
 
 .about__description{
   margin-bottom: var(--mb-3);
+
 }
 
 .about__img{
@@ -283,7 +289,7 @@ img{
 
 .about__initial{
   text-align: center;
-  margin-left: var(--mb-2);
+  margin-left: var(--mb-1);
 }
 
 
@@ -360,8 +366,7 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 aside{
-  float: left;
-  width: 40%;
+  justify-content: center;
 }
 
 .contact__container{
@@ -370,7 +375,6 @@ aside{
 
 .contact__description{
   margin-bottom: var(--mb-3);
-  display: 1;
 }
 
 .footer__container{
