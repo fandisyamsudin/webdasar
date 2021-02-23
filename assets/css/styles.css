@@ -209,7 +209,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6,156,84,.5);
+  background: rgba(78, 18, 3, 0.5);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -340,7 +340,7 @@ aside{
   margin-bottom: var(--mb-2);
 }
 
-.menu__name, .menu__preci{
+.menu__name{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
@@ -349,24 +349,12 @@ aside{
   font-size: var(--normal-font-size);
 }
 
-.menu__detail, .menu__preci{
+.menu__detail{
   font-size: var(--small-font-size);
 }
 
 .menu__detail{
   margin-bottom: var(--mb-1);
-}
-
-.menu__button{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  padding: .625rem .813rem;
-  border-radius: .5rem 0 .5rem 0;
-}
-aside{
-  justify-content: center;
 }
 
 .contact__container{
@@ -428,19 +416,17 @@ aside{
 
 @media screen and (min-width: 576px){
   .home__container,
-  .about__container,
-  .app__container{
+  .about__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
   }
 
   .about__data, .about__initial,
-  .app__data, .app__initial,
   .contact__container, .contact__initial{
     text-align: initial;
   }
 
-  .about__img, .app__img{
+  .about__img{
     width: 380px;
     order: -1;
   }
@@ -448,9 +434,6 @@ aside{
   .contact__container{
     grid-template-columns: 1.75fr 1fr;
     align-items: center;
-  }
-  .contact__button{
-    justify-self: center;
   }
 }
 
@@ -487,7 +470,7 @@ aside{
     justify-items: center;
   }
 
-  .services__container,
+  .skills__container,
   .menu__container{
     margin-top: var(--mb-6);
   }
@@ -502,10 +485,6 @@ aside{
   .menu__img{
     width: 130px;
   }
-
-  .app__store{
-    margin: 0 var(--mb-1) 0 0;
-  }
 }
 
 @media screen and (min-width: 960px){
@@ -518,8 +497,7 @@ aside{
     width: 500px;
   }
 
-  .about__container,
-  .app__container{
+  .about__container{
     column-gap: 7rem;
   }
 }
