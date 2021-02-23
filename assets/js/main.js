@@ -1,4 +1,3 @@
-// menu
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -38,14 +37,14 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-// scroll
+
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
-// change theme
+
 function scrollHeader(){
     const nav = document.getElementById('header')
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
@@ -72,7 +71,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-// reveal animation
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -83,7 +82,8 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
             .skills__content, .menu__content,
-            .contact__data, .contact__button,
+            .description__container,
+            .about__description
             .footer__content`, {
     interval: 200
 })

@@ -252,19 +252,6 @@ img{
   justify-self: center;
 }
 
-.button{
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #FFF;
-  padding: .75rem 1rem;
-  border-radius: .5rem;
-  transition: .3s;
-}
-
-.button:hover{
-  background-color: var(--first-color-alt);
-}
-
 aside{
   float: left;
   width: 45%;
@@ -351,17 +338,14 @@ aside{
 
 .menu__detail{
   font-size: var(--small-font-size);
-}
-
-.menu__detail{
   margin-bottom: var(--mb-1);
 }
 
-.contact__container{
+.description__container{
   text-align: center;
 }
 
-.contact__description{
+.about__description{
   margin-bottom: var(--mb-3);
 }
 
@@ -369,7 +353,7 @@ aside{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
 }
-.contact__initial{
+.description__initial{
   margin-bottom: 0%;
 }
 
@@ -422,7 +406,7 @@ aside{
   }
 
   .about__data, .about__initial,
-  .contact__container, .contact__initial{
+  .description__container, .description__initial{
     text-align: initial;
   }
 
@@ -431,7 +415,7 @@ aside{
     order: -1;
   }
 
-  .contact__container{
+  .description__container{
     grid-template-columns: 1.75fr 1fr;
     align-items: center;
   }
